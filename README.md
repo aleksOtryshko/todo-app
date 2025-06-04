@@ -37,7 +37,7 @@ cd todo-app
 docker build -t todo-app .
 docker run -it --rm todo-app
 
->  Не забудь использовать -it, чтобы видеть меню в терминале
+ Не забудь использовать -it, чтобы видеть меню в терминале
 
 
 
