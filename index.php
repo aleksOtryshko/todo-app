@@ -12,7 +12,7 @@ $controller = new TaskController($service);
 
 function menu(): void
 {
-    echo "\n📋 Меню:\n";
+    echo "\n Меню:\n";
     echo "1. Добавить задачу\n";
     echo "2. Показать список\n";
     echo "3. Удалить завершенные задачи\n";
@@ -35,7 +35,7 @@ while (true) {
             try {
                 $controller->createTask($title);
             } catch (Exception $e) {
-                echo "❌ Ошибка: {$e->getMessage()}\n";
+                echo " Ошибка: {$e->getMessage()}\n";
             }
             break;
 
@@ -53,12 +53,12 @@ while (true) {
             try {
                 $controller->completeTask($num - 1);
             } catch (Exception $e) {
-            echo "❌ Ошибка: " . $e->getMessage() . "\n";
+            echo " Ошибка: " . $e->getMessage() . "\n";
             }
         break;
 
         case '0':
-            echo "👋 Выход...\n";
+            echo " Выход...\n";
             exit;
     }
 }
