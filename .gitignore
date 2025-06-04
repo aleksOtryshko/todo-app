@@ -1,0 +1,6 @@
+/vendor/
+tasks.json
+*.log
+.idea/
+*.lock
+.env
